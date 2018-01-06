@@ -3,7 +3,7 @@ from Cython.Distutils import build_ext
 import io
 from os.path import exists
 
-__version__ = "0.5.2"
+__version__ = "0.5.3"
 
 
 ext_modules = [

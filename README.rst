@@ -19,7 +19,6 @@ Subtraction
 
 A simple subtraction is as followed
 
-'''
 
    from cython_csg import CSG
 
@@ -28,8 +27,6 @@ A simple subtraction is as followed
    c = a - b
    c.saveVTK('subtract.vtk')
 
-'''
-
 
 Union
 -----
@@ -37,14 +34,11 @@ Union
 A Simple Union would is as followed
 
 
-'''
-
     from cython_csg import CSG
     a = CSG.sphere(center=[0.5, 0.5, 0.5], radius=0.5, slices=8, stacks=4)
     b = CSG.cylinder(start=[0.,0.,0.], end=[1.,0.,0.], radius=0.3, slices=16)
     a.union(b).saveVTK('union.vtk')
 
-'''
 
 
 Custom objects
@@ -53,7 +47,6 @@ Custom objects
 
 You can make custom object here is a example
 
-'''
 
     from cython_csg import BSPNode, Polygon, Vertex
     v0 = Vertex([0., 0., 0.])
@@ -63,9 +56,10 @@ You can make custom object here is a example
     polygons = [p0]
     node = BSPNode(polygons)
 
-'''
 
-if you then want to convert it back to a CSG object you can do  ''' CSG.fromPolygons(node) '''
+if you then want to convert it back to a CSG object you can do
+
+    CSG.fromPolygons(node)
 
 
 
@@ -73,12 +67,10 @@ Install
 =======
 
 To build run
-'''
+
 
     python setup.py build
     python setup.py install
-
-'''
 
 
 Other Notes

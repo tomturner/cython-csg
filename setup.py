@@ -12,7 +12,7 @@ ext_modules = [
 ]
 
 setup(
-    name='cython_csg',
+    name='cython-csg',
     version=__version__,
     author='Thomas Turner',
     author_email='tom@twt.me.uk',

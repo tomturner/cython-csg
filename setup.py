@@ -1,10 +1,9 @@
-from distutils.extension import Extension
+from setuptools import Extension, setup
 from Cython.Distutils import build_ext
 import io
 from os.path import exists
-from distutils.core import setup
 
-__version__ = "0.5.0"
+__version__ = "0.5.1"
 
 
 ext_modules = [

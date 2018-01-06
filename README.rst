@@ -19,6 +19,7 @@ Subtraction
 
 A simple subtraction is as followed
 
+.. code-block:: python
 
    from cython_csg import CSG
 
@@ -34,6 +35,8 @@ Union
 A Simple Union would is as followed
 
 
+.. code-block:: python
+
     from cython_csg import CSG
     a = CSG.sphere(center=[0.5, 0.5, 0.5], radius=0.5, slices=8, stacks=4)
     b = CSG.cylinder(start=[0.,0.,0.], end=[1.,0.,0.], radius=0.3, slices=16)
@@ -47,6 +50,7 @@ Custom objects
 
 You can make custom object here is a example
 
+.. code-block:: python
 
     from cython_csg import BSPNode, Polygon, Vertex
     v0 = Vertex([0., 0., 0.])
@@ -68,6 +72,8 @@ Install
 
 To build run
 
+
+.. code-block:: bash
 
     python setup.py build
     python setup.py install

@@ -3,11 +3,11 @@ from Cython.Distutils import build_ext
 import io
 from os.path import exists
 
-__version__ = "0.5.3"
+__version__ = "0.5.4"
 
 
 ext_modules = [
-    Extension("cython_csg", ["cython_csg/cython_csg.pyx"]),
+    Extension("cython_csg/cython_csg", ["cython_csg/cython_csg.pyx"]),
 ]
 
 setup(

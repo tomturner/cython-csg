@@ -21,7 +21,7 @@ A simple subtraction is as followed
 
 .. code-block:: python
 
-   from cython_csg import CSG
+   from _cython_csg import CSG
 
    a = CSG.cube()
    b = CSG.cube([0.5, 0.5, 0.0])
@@ -37,7 +37,7 @@ A Simple Union would is as followed
 
 .. code-block:: python
 
-    from cython_csg import CSG
+    from _cython_csg import CSG
     a = CSG.sphere(center=[0.5, 0.5, 0.5], radius=0.5, slices=8, stacks=4)
     b = CSG.cylinder(start=[0.,0.,0.], end=[1.,0.,0.], radius=0.3, slices=16)
     a.union(b).saveVTK('union.vtk')
@@ -52,7 +52,7 @@ You can make custom object here is a example
 
 .. code-block:: python
 
-    from cython_csg import BSPNode, Polygon, Vertex
+    from _cython_csg import BSPNode, Polygon, Vertex
     v0 = Vertex([0., 0., 0.])
     v1 = Vertex([1., 0., 0.])
     v2 = Vertex([1., 1., 0.])

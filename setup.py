@@ -1,13 +1,14 @@
-from setuptools import Extension, setup
+from setuptools import setup
+from distutils.extension import Extension
 from Cython.Distutils import build_ext
 import io
 from os.path import exists
 
-__version__ = "0.5.4"
+__version__ = "0.5.5"
 
 
 ext_modules = [
-    Extension("cython_csg/cython_csg", ["cython_csg/cython_csg.pyx"]),
+    Extension("cython_csg/main", ["cython_csg/cython_csg.pyx"]),
 ]
 
 setup(

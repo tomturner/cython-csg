@@ -12,13 +12,16 @@ ext_modules = [
 ]
 
 setup(
-    name='pycsg',
+    name='cython_csg',
     version=__version__,
     author='Thomas Turner',
     author_email='tom@twt.me.uk',
     cmdclass={'build_ext': build_ext},
     ext_modules=ext_modules,
     scripts=[],
+    packages=[
+        'cython_csg',
+    ],
     url='https://github.com/tomturner/cython-csg',
     license='MIT',
     description='Constructive solid geometry on meshes using BSP trees in Cython CSG.',
@@ -37,6 +40,5 @@ setup(
     ],
     install_requires=[
         'Cython >= 0.27',
-    ],
-    zip_safe=False,
+    ]
 )

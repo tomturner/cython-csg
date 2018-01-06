@@ -8,7 +8,7 @@ CPython port of Evan Wallace's [csg.js](https://github.com/evanw/csg.js/) and ti
 What is Cython-CSG
 ------------------
 
-CSG stands for Constructive Solid Geometry. It allow Boolean operations to be made on a 3D object
+CSG stands for Constructive Solid Geometry. It allow Boolean operations to be made on a 3D object like subtraction.
 
 
 Usage

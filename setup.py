@@ -19,7 +19,7 @@ setup(
     cmdclass={'build_ext': build_ext},
     ext_modules=ext_modules,
     scripts=[],
-    url='https://github.com/tomturner/cython_csg',
+    url='https://github.com/tomturner/cython-csg',
     license='MIT',
     description='Constructive solid geometry on meshes using BSP trees in Cython CSG.',
     long_description=io.open('README.rst', encoding='utf-8').read() if exists("README.rst") else "",

@@ -41,4 +41,8 @@ setup(
         'Cython >= 0.27',
     ],
     zip_safe=False,
+    package_data={
+        'cython_csg': ['*.pyd']
+    },
+    include_package_data=True,
 )
